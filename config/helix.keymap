@@ -79,9 +79,9 @@ As such, those are in use within the default layer at this time.*/
                      bindings = <
        &kp ESC     &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                                     &kp F6        &kp F7      &kp F8        &kp F9         &kp F10        &kp F11
        &kp BSPC    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                               &trans        &trans      &trans        &trans         &kp PSCRN      &kp F12
-       &kp LS(TAB) &out OUT_TOG &out OUT_USB &out OUT_BLE &kp C_BRI_DN &kp C_BRI_UP                               &transs       &trans      &trans        &trans         &trans         &trans        
+       &kp LS(TAB) &out OUT_TOG &out OUT_USB &out OUT_BLE &kp C_BRI_DN &kp C_BRI_UP                               &trans        &trans      &trans        &trans         &trans         &trans        
        &kp BSLH    &trans       &bt BT_CLR   &bt BT_PRV   &bt BT_NXT   &kp C_VOL_DN &kp C_VOL_UP        &kp CAPS  &trans        &trans      &trans        &kp LBKT       &trans         &kp RBKT
-       &kp RCTRL   &RGUI        &RALT        &kp RSHIFT       &trans       &trans                       &kp DEL   &kp SPACE     &kp SPACE   &trans        &trans         &trans         &trans
+       &kp RCTRL   &RGUI        &RALT        &kp RSHIFT   &trans       &trans       &trans              &kp DEL   &kp SPACE     &kp SPACE   &trans        &trans         &trans         &trans
                      >;
               };
        };
