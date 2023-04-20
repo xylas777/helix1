@@ -26,24 +26,24 @@ As such, those are in use within the default layer at this time.*/
  
               default_layer {
  // ---------------------------------------------------------------------------------------------------------------------------------
- // |  ESC   |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |   +    |
+ // |  TILDE |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |   +    |
  // |  DEL   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |   -    |
- // |   ;    |   A    |   S    |   D    |   F    |   G    |                                      |   H    |   J    |   K    |   L    |   '    |   RET  |
- // |  TAB   |   Z    |   X    |   C    |   V    |   HOME |  END   |                    |    /   |   B    |   N    |   M    |   ,    |  UP    |   .    |
- // |  CTRL  |  GUI   |  ALT   |        | SPACE  |        |  FN    |                    |  BPSC  |        | RSHIFT |        |  LEFT  |  DOWN  |  RIGHT |
+ // |  TAB   |   A    |   S    |   D    |   F    |   G    |                                      |   H    |   J    |   K    |   L    |   '    |   ;    |
+ // |   /    |   Z    |   X    |   C    |   V    |   HOME |  END   |                    |    /   |   B    |   N    |   M    |   ,    |  UP    |   .    |
+ // |  CTRL  |  WIN   |  ALT   |        | SPACE  |        |  FN    |                    |  BPSC  |        | LSHIFT |        |  LEFT  |  DOWN  |  RIGHT |
                      bindings = <
-       &kp ESC    &kp N1   &kp N2   &kp N3   &kp N4    &kp N5                               &kp N6    &kp N7     &kp N8    &kp N9     &kp N0    &kp DEL
-       &kp TAB    &kp Q    &kp W    &kp E    &kp R     &kp T                                &kp Y     &kp U      &kp I     &kp O      &kp P     &kp BSPC
-       &kp SEMI   &kp A    &kp S    &kp D    &kp F     &kp G                                &kp H     &kp J      &kp K     &kp L      &kp APOS  &kp RET
-       &kp TAB    &kp Z    &kp X    &kp C    &kp V     &kp HOME &kp END         &kp SLASH   &kp B     &kp N      &kp M     &kp COMMA  &kp UP    &kp PERIOD
-       &kp LCTRL  &kp LGUI &kp LALT &kp LALT &kp SPACE &kp RET  &mo ADJUST      &kp BSPC    &kp BSPC  &kp RSHIFT &kp RALT  &kp LEFT   &kp DOWN  &kp RIGHT
+       &kp GRAVE  &kp N1   &kp N2   &kp N3   &kp N4    &kp N5                               &kp N6    &kp N7     &kp N8    &kp N9     &kp N0    &kp PLUS
+       &kp DEL    &kp Q    &kp W    &kp E    &kp R     &kp T                                &kp Y     &kp U      &kp I     &kp O      &kp P     &kp MINUS
+       &kp TAB    &kp A    &kp S    &kp D    &kp F     &kp G                                &kp H     &kp J      &kp K     &kp L      &kp APOS  &kp SEMI
+       &kp SLASH  &kp Z    &kp X    &kp C    &kp V     &kp HOME &kp END         &kp RET     &kp B     &kp N      &kp M     &kp COMMA  &kp UP    &kp PERIOD
+       &kp LCTRL  &kp LGUI &kp LALT &kp LALT &kp SPACE &kp RET  &mo ADJUST      &kp BSPC    &kp BSPC  &kp LSHIFT &kp RALT  &kp LEFT   &kp DOWN  &kp RIGHT
       >;
               };
               lower_layer {
  // ---------------------------------------------------------------------------------------------------------------------------------
  // |      |      |      |      |      |      |                                  |      |      |      |      |      |      |
  // |  ~   |  !   |  @   |  #   |  $   |  %   |                                  |  ^   |  &   |  *   |  (   |  )   |      |
- // |      |      |      |      |      |      |                                  |      |  _   |  +   |  {   |  }   | PIPE |
+ // |      |      |      |      |      |      |                                  |      |c   |  +   |  {   |  }   | PIPE |
  // |      |      |      |      |      |      |  (   |                    |  )   |      |      |      | HOME | END  |      |
  // |      |      |      |      |      |      |      |                    |      |      |      |      |      |      |      |
                      bindings = <
@@ -71,17 +71,17 @@ As such, those are in use within the default layer at this time.*/
               };
               adjust_layer {
  // ---------------------------------------------------------------------------------------------------------------------------------
- // |    `     |    !     |    @     |    #     |    $     |    %     |                                          |    ^     |    &     |    *     |    (     |    )     |  EP TOG  |
- // |  BT CLR  | BT SEL0  | BT SEL1  | BT SEL2  | BGT SEL3 | BT SEL4  |                                          | RGB EFF+ | RGB HUE+ | RGB SAT+ | RGB SPD+ | RGB BRI+ | RGB TOG  |
- // |  BT NXT  | OUT TOG  | OUT USB  | OUT BLE  |          |          |                                          | RGB EFF- | RGB HUE- | RGB SAT- | RGB SPD- | RGB BRI- |          |
- // |  BT PRV  |          |          |          |          |          |    {     |                    |    }     |          |          |          |          |          |          |
- // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
+ // |    ESC   |    F1    |    F2    |    F3    |    F4    |    F5    |                                          |   F6     |   F7     |   F8     |   F9     |    F10   |   F11    |
+ // |   BSPC   | BT SEL0  | BT SEL1  | BT SEL2  | BGT SEL3 | BT SEL4  |                                          |          |          |          |          |   PSCRN  |   F12    |
+ // |   shftab | OUT TOG  | OUT USB  | OUT BLE  |  bri dn  |   bri up |                                          |          |          |          |          |          |          |
+ // |   BSLH   |          |  BT CLR  |   BT PRV |  BT NXT  |   voldn  |  volup   |                    |  CAPS    |          |          |          |    {     |          |    }     |
+ // |   ctrl   |  win     |  RALT    |          |  rshift  |          |          |                    |  DEL     |          |   space  |          |          |          |          |
                      bindings = <
-       &kp GRAVE  &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT                             &kp CARET       &kp AMPS        &kp ASTRK       &kp LPAR        &kp RPAR        &ext_power EP_TOG
-       &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                          &rgb_ug RGB_EFF &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_SPI &rgb_ug RGB_BRI &rgb_ug RGB_TOG 
-       &bt BT_NXT &out OUT_TOG &out OUT_USB &out OUT_BLE &kp C_BRI_DN &kp   C_BRI_UP                               &rgb_ug RGB_EFR &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_SPD &rgb_ug RGB_BRD &trans
-       &bt BT_PRV &trans       &trans       &trans       &trans       &kp C_VOL_DN &kp C_VOL_UP       &kp RBRC &trans          &trans          &trans          &trans          &trans          &trans
-       &trans     &trans       &trans       &trans       &trans       &trans       &trans          &trans   &trans          &trans          &trans          &trans          &trans          &trans
+       &kp ESC     &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                                     &kp F6        &kp F7      &kp F8        &kp F9         &kp F10        &kp F11
+       &kp BSPC    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                               &trans        &trans      &trans        &trans         &kp PSCRN      &kp F12
+       &kp LS(TAB) &out OUT_TOG &out OUT_USB &out OUT_BLE &kp C_BRI_DN &kp C_BRI_UP                               &transs       &trans      &trans        &trans         &trans         &trans        
+       &kp BSLH    &trans       &bt BT_CLR   &bt BT_PRV   &bt BT_NXT   &kp C_VOL_DN &kp C_VOL_UP        &kp CAPS  &trans        &trans      &trans        &kp LBKT       &trans         &kp RBKT
+       &kp RCTRL   &RGUI        &RALT        &kp RSHIFT       &trans       &trans                       &kp DEL   &kp SPACE     &kp SPACE   &trans        &trans         &trans         &trans
                      >;
               };
        };
